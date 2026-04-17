@@ -45,7 +45,7 @@ GAS_CONFIG = {
     "Neon": 0
 }
 #old: @app.route('/api', methods=['POST'])
-@app.route('/')
+@app.route('/calculate', methods=['GET', 'POST'])
 def home():
     # This looks inside the 'templates' folder automatically
     return render_template('index.html')
